@@ -1,11 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ui</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDQRG5S93E"></script>
+   <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag() { dataLayer.push(arguments); }
+       gtag('js', new Date());
+
+       gtag('config', 'G-WDQRG5S93E');
+   </script>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Home | Hernando Reptile and Exotics Rescue Inc | Spring Hill FL</title>
+   <meta name="description"
+       content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptiles including turtles and exotic animals across Florida.">
+   <meta property="og:title" content="Home | Hernando Reptile and Exotics Rescue Inc | Spring Hill FL">
+   <meta property="og:description"
+       content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptile and exotic animals across Florida.  We specialize in education of adults and children in responsible pet ownership to help prevent release of invasive species into the wild.">
+   <meta property="og:url" content="https://www.hernandoreptile.org">
+   <meta property="og:site_name" content="Hernando Reptile">
+   <meta property="og:type" content="website">
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+           new Splide('#image-slider', {
+               rewind: true,
+               perPage: 1,
+               perMove: 1,
+               'cover': true,
+               'height': '30rem',
+               'type': 'loop',
+               'autoplay': 1000
+           }).mount();
+       });
+   </script>
 </head>
 <body>
   <app-root></app-root>
