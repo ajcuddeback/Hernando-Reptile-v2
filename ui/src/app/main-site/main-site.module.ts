@@ -11,6 +11,7 @@ import { PITMicroComponent } from './components/pit-micro/pit-micro.component';
 import { VolunteerComponent } from './components/volunteer/volunteer.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/home-page/hero/hero.component';
 
 
 
@@ -25,7 +26,8 @@ import { HeaderComponent } from './components/header/header.component';
     VolunteerComponent,
     VolunteerComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeroComponent
   ],
   imports: [
     CommonModule,

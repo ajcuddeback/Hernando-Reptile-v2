@@ -1,0 +1,106 @@
+.home-hero-section {
+    background-image: url("../../../../../assets/images/main-hero.jpg");
+    margin-bottom: 2rem;
+  }
+  .home-hero-section,
+  .donation-hero-section {
+    box-shadow: 2px 5px 5px grey;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+    min-width: 100%;
+    opacity: 0.82;
+    z-index: -2;
+  }
+  .hero-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .carousel-hero-img-wrapper .main-carousel img {
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    background: black;
+    margin-top: 5vh;
+  }
+  .cta {
+    text-align: center;
+    flex: 1.5;
+    padding: 2rem;
+  }
+  .cta p {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color: white;
+  }
+.cta a {
+    color: white;
+    background-color: var(--main-orange);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 0.6px solid black;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+    .carousel-hero-img-wrapper .main-carousel img {
+      width: 500px;
+      height: 416.66px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .carousel-hero-img-wrapper .main-carousel img {
+        width: 450px;
+        height: 375px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .carousel-hero-img-wrapper .main-carousel img {
+      width: 400px;
+      height: 333.33px;
+    }
+    .hero-content-wrapper {
+        max-width: 80%;
+    }
+    .home-hero-section{
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .carousel-hero-img-wrapper .main-carousel img {
+      width: 360px;
+      height: 300px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .hero-content-wrapper {
+      flex-direction: column;
+    }
+    .carousel-hero-img-wrapper {
+        order: 2;
+    }
+    .carousel-hero-img-wrapper .main-carousel img {
+        margin-bottom: 1rem;
+        width: 350px;
+        height: 291.67px;
+    }
+    @media screen and (max-width: 410px) {
+        .carousel-hero-img-wrapper .main-carousel img {
+            width: 275px;
+            height: 229px;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .hero-content-wrapper {
+            max-width: 90%;
+        }
+    }
+}
