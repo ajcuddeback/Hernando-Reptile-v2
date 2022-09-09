@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  /* Global Styles */
+  :root {
+    --main-orange: #ff791f;
+  }
+  body {
+    background-color: rgb(238, 222, 194);
+    position: relative;
+    overflow-x: hidden;
+  }
+  h1,
+  h2 {
+    font-family: "PT Sans", sans-serif;
+    color: var(--main-orange);
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+  }
+  .small-text {
+    font-size: 16px;
+  }
+  a {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+  }
+  .indent {
+    text-indent: 30px;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .bold {
+    font-weight: 900;
+  }
+  .button {
+    background-color: var(--main-orange);
+    color: white;
+    border-radius: 5px;
+    transform: translateY(0px);
+  }
+  .button:hover {
+    transition: 0.1s ease-in-out;
+    background-color: #b34e0b;
+    transform: translateY(2px);
+  }
+  .button:active {
+    transform: translateY(4px);
+  }
+  a {
+    text-decoration: none;
+  }
+  .margin-top {
+    margin-top: 2rem;
+  }
+  .margin-bottom {
+    margin-bottom: 2rem;
+  }
+  .padding-top {
+    padding-top: 1rem;
+  }
+  .top-dashed-line {
+    border-top: 2px dashed var(--main-orange);
+  }
+  .medium-text {
+    font-size: 36px;
+    text-align: center;
+  }
+  input,
+  textarea {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s;
+  }
+  input:focus,
+  textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: 2px solid var(--main-orange);
+    -moz-outline-radius: 5px;
+    border: none;
+  }
+  textarea {
+    font-family: Lato;
+  }

@@ -1,0 +1,125 @@
+/* Navigation */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    background-color: white;
+    position: sticky;
+    box-shadow: 2px 2px 4px 4px rgb(15, 15, 15);
+    top: 0;
+    z-index: 888;
+  }
+  header a img {
+    border-radius: 5px;
+    margin-left: 3rem;
+    width: 150px;
+  }
+  nav {
+    line-height: 70px;
+  }
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--main-orange);
+    margin: 0 10px;
+    line-height: 70px;
+    transition: all 0.2s ease;
+    border-right: 1px solid var(--main-orange);
+    padding-right: 1rem;
+    clear: right;
+}
+.menu a:hover {
+    color: #cc6018;
+    text-shadow: 1px 1px #cc6018;
+}
+.menu-label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1130px) {   
+    .menu-label {
+        display: block;
+        cursor: pointer;
+    }
+    header {
+        flex-direction: column;
+        height: 100px;
+    }
+    .menu {
+        display: flex;
+        text-align: center;
+        width: 30%;
+        background-color: var(--main-orange);
+        position: absolute;
+        left: 0;
+        transform: translateX(-1000px);
+        border: 1px solid black;
+        height: 100vh;
+    }
+    #toggle,
+    .menu-label {
+        position: relative;
+        left: 6rem;
+        bottom: 1rem;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid black;
+        border-right: none;
+        margin: 0;
+        transition: 1s;
+        color: white;
+    }
+    #toggle:checked + .menu {
+        display: block;
+        animation: menu-in 1s forwards;
+    }
+    #toggle:not(:checked) + .menu {
+        animation: menu-out 1s forwards;
+        display: flex;
+        flex-direction: column;
+    }
+    @keyframes menu-in {
+        from {
+            transform: translateX(-1000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes menu-out {
+        from {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(-1000px);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #toggle,
+    .menu-label {
+      left: 2rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .menu {
+        width: 50%;
+    }
+}
