@@ -1,0 +1,23 @@
+{
+  "name": "hernando-reptile-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd ui && ng serve\"",
+    "install": "cd server && npm i && cd ../ui && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajcuddeback/Hernando-Reptile-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajcuddeback/Hernando-Reptile-v2/issues"
+  },
+  "homepage": "https://github.com/ajcuddeback/Hernando-Reptile-v2#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
