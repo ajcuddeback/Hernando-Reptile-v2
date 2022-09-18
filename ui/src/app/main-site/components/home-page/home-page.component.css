@@ -1,0 +1,63 @@
+.mission {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mission p {
+  margin-top: 1rem;
+}
+.featured-animals {
+  display: flex;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-bottom: 2px dashed var(--main-orange);
+}
+.featured-adoptable,
+.featured-ambassador {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.featured-ambassador {
+  margin-left: 2rem;
+}
+.featured-ambassador p {
+  width: 80%;
+}
+.featured-text {
+  width: 60%;
+  margin-left: 3rem;
+}
+.featured-img img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+.adoptable-preview h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.adoptable-carousel {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 300px;
+  margin: 4rem auto;
+}
+.image-holder {
+  position: relative;
+}
+.image-holder0 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  justify-content: center;
+}
+.reptile {
+  width: 350px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
